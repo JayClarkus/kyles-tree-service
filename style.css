@@ -243,13 +243,9 @@ button:hover {
 	}
 	
 	.nav-bar ul {
-		list-style: none;
-		padding: 0;
-		margin: 0;
 		display: flex;
-		flex-wrap: wrap;
 		width: 100%;
-		overflow-x: hidden;
+		padding: 0;
 	}
 
 	.nav-bar li {
@@ -259,7 +255,7 @@ button:hover {
 
 	.nav-bar a {
 		font-size: 20px;
-		padding: 15px;
+		padding: 10px;
 		-webkit-text-stroke: 0;
 	}
 	
