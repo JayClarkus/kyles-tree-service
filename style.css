@@ -24,7 +24,7 @@ hr {
 }
 
 img {
-	max-width: 100%;
+	max-width: auto;
 	height: auto;
 	border: 1px solid black;
 }
