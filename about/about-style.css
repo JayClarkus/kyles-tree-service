@@ -1,0 +1,381 @@
+body {
+	margin: 0;
+	font-family: sans-serif;
+	display: flex;
+	flex-direction: column;
+	min-height: 150vh;
+	color: white;
+	background: #ECEDF2FF;
+	overflow-x: auto;
+}
+
+iframe {
+	display: block;
+	width: 30rem;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+	text-align: center;
+	color: black;
+}
+
+hr {
+	height: 4px;
+	background: black;
+	border: 0px solid black;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	border: 1px solid black;
+}
+
+summary {
+	font-weight: bold;
+	text-align: left;
+	font-size: 28px;
+}
+
+summary:hover {
+	cursor: pointer;
+	color: yellow;
+}
+
+details {
+	justify-content: flex-start
+}
+
+pre {
+	color: white;
+	margin-top: 5%;
+	font-family: sans-serif;
+	color: white; font-size: 32px;
+	font-weight: bold;
+	margin-right: 10rem;
+}
+
+.about-content p {
+	font-size: 28px;
+}
+
+.intro-hr {
+	max-width: 1100px;
+}
+
+.banner img, .footer img {
+	border: 0px solid black;
+}
+
+.banner img {
+	width: 100%;
+	max-width: 2560px;
+	padding: 0px;
+}
+
+.banner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 1;
+	background: #ECEDF2FF;
+	color: #669ACCFF;
+	font-size: 48px;
+	gap: 2rem;
+}
+
+.nav-bar {
+	display: flex;
+	justify-content: center;
+	padding: 1rem;
+	padding-top: 0rem;
+	padding-bottom: 0rem;
+	flex: 0.010;
+	background: #003B6DFF;
+	border-top: 4px solid black;
+	border-bottom: 5px solid black;
+	color: white;
+}
+
+.nav-bar li {
+	display: inline-block;
+	margin: 0;
+}
+
+.nav-bar a {
+	display: block;
+	padding: 25px;
+	min-height: auto;
+	color: white;
+	text-decoration: none;
+	font-size: 32px;
+	font-weight: bold;
+	-webkit-text-stroke: 0;
+	background: #003B6DFF;
+}
+
+.nav-bar a:hover {
+	background: #669ACCFF;
+}
+
+.faq li:hover {
+	background: none;
+}
+
+.nav-bar a,
+.nav-bar a:link,
+.nav-bar a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+.container {
+	display: flex;
+	flex: 7;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 3rem;
+	background: 806443;
+	gap: 1rem;
+}
+
+.about-content {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	text-align: left;
+	padding: 1rem;
+	margin-left: 25%;
+	margin-right: 25%;
+	color: black;
+}
+
+.about-content img {
+	max-width: 400px;
+	flex-shrink: 0;
+}
+
+.reviews {
+	display: flex;
+	flex-direction: row-reverse;
+	width: 55%;
+	margin: auto;
+	margin-bottom: 5rem;
+	padding: 5%;
+	padding-bottom: 10rem;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.slides {
+	display: flex;
+	flex-direction: column;
+	margin-left: 10rem;
+}
+
+
+.prev,
+.next {
+	cursor: pointer;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 22px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+.prev:hover,
+.next:hover {
+	color: yellow;
+}
+
+.numbertext {
+	font-family: sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.sidebar {
+	flex: 0.25;
+	background: #003B6DFF;
+	padding: 1rem;
+	margin: 5px;
+	border: 5px solid black;
+}
+
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 6rem;
+	flex: 2;
+	flex-direction: column;
+	gap: 4rem;
+	background: #BDBDBDFF;
+	border-top: 5px solid black;
+}
+
+.doormat {
+	flex-direction: column;
+}
+
+.doormat-contact {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	text-align: center;
+}
+
+.footer-top {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
+	padding: 2rem 6rem;
+	gap: 6rem;
+	flex-wrap: wrap;
+}
+
+.footer-bottom {
+	width: 100%;
+	text-align: center;
+	padding: 1rem;
+	border-top: 2px solid #333;
+	font-size: 14px;
+}
+
+#email, #phone, #facebook {
+	display: flex;
+	align-items: center;
+	gap: 0.25rem;
+	margin: 0;
+	text-align: left;
+}
+
+#email p, #phone p {
+	margin: 0;
+	line-height: 1;
+}
+
+.doormat-logo {
+	width: 200px;
+}
+
+.contact-icons {
+	width: 50px;
+	height: auto;
+	display: block;
+}
+
+@media (max-width: 768px) {
+	
+	h1 {
+		font-size: 24px;
+	}
+	
+	h2 {
+		font-size: 22px;
+	}
+	
+	strong {
+		font-size: 18px;
+	}
+	
+	pre {
+		font-size: 24px;
+	}
+	
+	.about-content p {
+		font-size: 20px;
+		margin:0;
+	}
+	
+	button {
+		width: 75%;
+	}
+	
+	.intro-hr {
+		max-width: 80%;
+	}
+	
+	.main-content img {
+		max-width: 110%;
+	}
+	
+	.nav-bar ul {
+		display: flex;
+		width: 100%;
+		padding: 0;
+	}
+
+	.nav-bar li {
+		width: 100%;
+		text-align: center;
+	}
+
+	.nav-bar a {
+		font-size: 20px;
+		padding: 15px;
+		-webkit-text-stroke: 0;
+	}
+	
+	.about-content {
+		flex-direction: column;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.about-content img {
+		max-width: 80%;
+		margin: 0.5rem auto;
+	}
+
+	.reviews {
+		flex-direction: column;
+		width: 90%;
+		padding: 1rem;
+		margin-bottom: 2rem;
+	}
+
+	.slides {
+		margin: 0 auto;
+		align-items: center;
+		width: 100%;
+	}
+
+	iframe {
+		width: 100%;
+		max-width: 90%;
+		height: 250px;;
+	}
+
+	.numbertext {
+		font-size: 16px;
+		padding-left: 5%;
+	}
+	
+	.footer-top {
+		flex-direction: column;
+		align-items: center;
+		padding: 2rem;
+		gap: 2rem;
+		text-align: center;
+	}
+
+	.footer img,
+	.doormat-logo {
+		max-width: 150px;
+	}
+
+	.contact-icons {
+		width: 32px;
+	}
+	
+}

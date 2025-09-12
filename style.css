@@ -1,0 +1,300 @@
+* {
+	text-align: center;
+}
+
+body {
+	margin: 0;
+	font-family: sans-serif;
+	display: flex;
+	flex-direction: column;
+	min-height: 250vh;
+	color: white;
+	background: #ECEDF2FF;
+	overflow-x: auto;
+}
+
+h1 {
+	text-align: center;
+}
+
+hr {
+	height: 4px;
+	background: black;
+	border: 0px solid black;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	border: 1px solid black;
+}
+
+strong {
+	font-size: 22px;
+}
+
+.banner img, .footer img {
+	border: 0px solid black;
+}
+
+.banner img {
+	width: 100%;
+	max-width: 2560px;
+	padding: 0px;
+}
+
+.main-content img {
+	width: 100%;
+	max-width: 600px;
+	height: auto;
+	margin: 0 auto;
+	display: block;
+}
+
+.hero img {
+	width: 100%;
+	max-width: 800px;
+	height: auto;
+	margin: 0 auto;
+	display: block;
+}
+
+.banner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 1;
+	background: #ECEDF2FF;
+	color: #669ACCFF;
+	font-size: 48px;
+	gap: 2rem;
+}
+
+.nav-bar {
+	display: flex;
+	justify-content: center;
+	padding: 1rem;
+	padding-top: 0rem;
+	padding-bottom: 0rem;
+	flex: 0.010;
+	background: #003B6DFF;
+	border-top: 4px solid black;
+	border-bottom: 5px solid black;
+	color: white;
+}
+
+.nav-bar li {
+	display: inline-block;
+	margin: 0;
+}
+
+.nav-bar a {
+	display: block;
+	padding: 25px;
+	min-height: auto;
+	color: white;
+	text-decoration: none;
+	font-size: 32px;
+	font-weight: bold;
+	-webkit-text-stroke: 1px black;
+	background: #003B6DFF;
+}
+
+.nav-bar a:hover {
+	background: #669ACCFF;
+}
+
+.nav-bar a,
+.nav-bar a:link,
+.nav-bar a:visited {
+	color: white;
+	text-decoration: none;
+	-webkit-text-stroke: 0;
+}
+
+.hero {
+	color: black;
+}
+
+.hero hr {
+	width: 100%;
+	max-width: 1100px;
+}
+
+button {
+	font-size: 32px;
+	background-color: #003B6DFF;
+	color: white;
+	border-radius: 30px;
+	cursor: pointer;
+	border: #333;
+	margin: 5px;
+	padding: 10px;
+	width: 100%;
+	max-width: 600px;
+}
+
+button:hover {
+	background-color: #669ACCFF;
+	font-weight: bold;
+}
+
+.container {
+	display: flex;
+	flex: 7;
+	justify-content: center;
+	padding: 3rem;
+	padding-top: 1rem;
+	background: 806443;
+	gap: 1rem;
+}
+
+.main-content {
+	flex: 0.5;
+	align-items: center;
+	background: #003B6DFF;
+	border: 5px solid black;
+}
+
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 6rem;
+	flex: 2;
+	flex-direction: column;
+	gap: 4rem;
+	background: #BDBDBDFF;
+	border-top: 5px solid black;
+}
+
+.doormat {
+	flex-direction: column;
+}
+
+.doormat-contact {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	text-align: center;
+}
+
+.footer-top {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
+	padding: 2rem 6rem;
+	gap: 6rem;
+	flex-wrap: wrap;
+}
+
+.footer-bottom {
+	width: 100%;
+	text-align: center;
+	padding: 1rem;
+	border-top: 2px solid #333;
+	font-size: 14px;
+}
+
+#email, #phone, #facebook {
+	display: flex;
+	align-items: center;
+	gap: 0.25rem;
+	margin: 0;
+	text-align: left;
+}
+
+#email p, #phone p {
+	margin: 0;
+	line-height: 1;
+}
+
+.doormat-logo {
+	width: 200px;
+}
+
+.contact-icons {
+	width: 50px;
+	height: auto;
+	display: block;
+}
+
+@media (max-width: 768px) {
+	
+	h1 {
+		font-size: 24px;
+	}
+	
+	h2 {
+		font-size: 22px;
+	}
+	
+	strong {
+		font-size: 18px;
+	}
+	
+	button {
+		width: 75%;
+	}
+	
+	.main-content img {
+		max-width: 110%;
+	}
+	
+	.nav-bar ul {
+		display: flex;
+		width: 100%;
+		padding: 0;
+	}
+
+	.nav-bar li {
+		width: 100%;
+		text-align: center;
+	}
+
+	.nav-bar a {
+		font-size: 20px;
+		padding: 15px;
+		-webkit-text-stroke: 0;
+	}
+	
+	.hero img {
+		max-width: 70%;
+		margin: 0 auto;
+	}
+	
+	.hero hr {
+		width: 80%;
+	}
+	
+	.container {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+		gap: 0.5rem;
+	}
+	
+	.main-content {
+		flex: 1;
+		min-width: 100%;
+		margin: 0;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	
+	.footer-top {
+		flex-direction: column;
+		align-items: center;
+		padding: 2rem;
+		gap: 2rem;
+		text-align: center;
+	}
+
+	.footer img,
+	.doormat-logo {
+		max-width: 150px;
+	}
+
+	.contact-icons {
+		width: 32px;
+	}
+}
