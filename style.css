@@ -265,21 +265,36 @@ button:hover {
 		box-sizing: border-box;
 	}
 	
+	.nav-bar {
+		padding: 0.5rem 0;
+		overflow-x: hidden;
+	}
+
 	.nav-bar ul {
 		display: flex;
 		width: 100%;
 		padding: 0;
+		margin: 0;
+		flex-wrap: wrap;
+		box-sizing: border-box;
 	}
 
 	.nav-bar li {
-		width: 100%;
+		flex: 1 1 auto;
 		text-align: center;
+		min-width: 0;
+		box-sizing: border-box;
 	}
 
 	.nav-bar a {
-		font-size: 20px;
-		padding: 10px;
+		font-size: 16px;
+		padding: 12px 8px;
 		-webkit-text-stroke: 0;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		box-sizing: border-box;
+		width: 100%;
 	}
 	
 	.hero img {
@@ -327,5 +342,23 @@ button:hover {
 
 	.contact-icons {
 		width: 32px;
+	}
+}
+
+@media (max-width: 480px) {
+	.nav-bar a {
+		font-size: 14px;
+		padding: 10px 4px;
+	}
+	
+	.nav-bar li {
+		flex: 1 1 25%;
+	}
+}
+
+@media (max-width: 360px) {
+	.nav-bar a {
+		font-size: 12px;
+		padding: 8px 2px;
 	}
 }
