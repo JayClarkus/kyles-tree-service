@@ -1,5 +1,6 @@
 * {
 	text-align: center;
+	box-sizing: border-box;
 }
 
 body {
@@ -24,9 +25,10 @@ hr {
 }
 
 img {
-	max-width: auto;
+	max-width: 100%;
 	height: auto;
 	border: 1px solid black;
+	box-sizing: border-box;
 }
 
 strong {
@@ -49,6 +51,7 @@ strong {
 	height: auto;
 	margin: 0 auto;
 	display: block;
+	box-sizing: border-box;
 }
 
 .hero img {
@@ -147,6 +150,8 @@ button:hover {
 	padding-top: 1rem;
 	background: 806443;
 	gap: 1rem;
+	flex-wrap: wrap;
+	align-items: flex-start;
 }
 
 .main-content {
@@ -154,6 +159,8 @@ button:hover {
 	align-items: center;
 	background: #003B6DFF;
 	border: 5px solid black;
+	overflow: hidden;
+	padding: 1rem;
 }
 
 .footer {
@@ -240,6 +247,7 @@ button:hover {
 	.main-content img {
 		max-width: 100%;
 		height: auto;
+		box-sizing: border-box;
 	}
 	
 	.nav-bar ul {
