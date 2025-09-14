@@ -47,11 +47,11 @@ strong {
 
 .main-content img {
 	width: 100%;
-	max-width: 600px;
 	height: auto;
 	margin: 0 auto;
 	display: block;
 	box-sizing: border-box;
+	object-fit: cover;
 }
 
 .hero img {
@@ -161,6 +161,21 @@ button:hover {
 	border: 5px solid black;
 	overflow: hidden;
 	padding: 1rem;
+}
+
+.container > div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.main-content .container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 1rem;
+	padding: 1rem;
+	background: transparent;
 }
 
 .footer {
@@ -282,6 +297,11 @@ button:hover {
 		padding-left: 1.5rem;
 		padding-right: 1.5rem;
 		gap: 0.5rem;
+	}
+	
+	.main-content .container {
+		grid-template-columns: 1fr;
+		padding: 0.5rem;
 	}
 	
 	.main-content {
