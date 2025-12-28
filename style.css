@@ -167,7 +167,6 @@ button:hover {
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
-	padding-bottom: 2rem;
 }
 
 .main-content .container {
@@ -176,6 +175,7 @@ button:hover {
 	gap: 1rem;
 	padding: 1rem;
 	background: transparent;
+	padding-bottom: 2rem;
 }
 
 .footer {
