@@ -160,7 +160,6 @@ button:hover {
 	background: #003B6DFF;
 	border: 5px solid black;
 	overflow: hidden;
-	padding: 1rem;
 }
 
 .container > div {
@@ -168,6 +167,7 @@ button:hover {
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
+	padding-bottom: 2rem;
 }
 
 .main-content .container {
